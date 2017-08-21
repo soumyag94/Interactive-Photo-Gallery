@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Interactive Photo Gallery</title>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-        <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="lightGallery-master/dist/css/lightgallery.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
 <body>
@@ -14,50 +14,53 @@
   <input type="search" id="search" name="user_search" placeholder= "Search for a Photo here " >
 </form>
 </header>
-<ul id="gallery">
 
-  <li><img src="photos/thumbnails/01.jpg"
-        alt="Picture of Hay Bales I love hay bales. Took this snap on a drive through the countryside past some straw fields."></li>
+<div class="gallery" id="lightgallery">
+  <a href="photos/01.jpg"><img src="photos/thumbnails/01.jpg"
+        alt="<u>Hay Bales</u> <br> I love hay bales. Took this snap on a drive through the countryside past some straw fields."></a>
 
-  <li><img src="photos/thumbnails/02.jpg"
-        alt="Picture of a Lake The lake was so calm today. We had a great view of the snow on the mountains from here."></li>
+  <a href="photos/02.jpg"><img src="photos/thumbnails/02.jpg"
+        alt="<u>Lake</u> <br> The lake was so calm today. We had a great view of the snow on the mountains from here."></a>
 
-  <li><img src="photos/thumbnails/03.jpg"
-        alt="Picture of a Canyon I hiked to the top of the mountain and got this picture of the canyon and trees below."></li>
+  <a href="photos/03.jpg"><img src="photos/thumbnails/03.jpg"
+        alt="<u>Canyon</u>  <br> I hiked to the top of the mountain and got this picture of the canyon and trees below."></a>
 
-  <li><img src="photos/thumbnails/04.jpg"
-        alt="Picture of an Iceberg It was amazing to see an iceberg up close, it was so cold but didn’t snow today. "></li>
+  <a href="photos/04.jpg"><img src="photos/thumbnails/04.jpg"
+        alt="<u>Iceberg</u>  <br> It was amazing to see an iceberg up close, it was so cold but didn’t snow today. "></a>
 
-  <li><img src="photos/thumbnails/05.jpg"
-        alt="Picture of a Desert The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></li>
+  <a href="photos/05.jpg"><img src="photos/thumbnails/05.jpg"
+        alt="<u>Desert</u> <br> The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></li></a>
 
-  <li><img src="photos/thumbnails/06.jpg"
-        alt="Picture of Fall Fall is coming, I love when the leaves on the trees start to change color."></li>
+  <a  href="photos/06.jpg"><img src="photos/thumbnails/06.jpg"
+        alt="<u>Fall </u> <br> Fall is coming, I love when the leaves on the trees start to change color."></a>
 
-  <li><img src="photos/thumbnails/07.jpg"
-        alt="Picture of a Plantation I drove past this plantation yesterday, everything is so green!"></li>
+  <a  href="photos/07.jpg"><img src="photos/thumbnails/07.jpg"
+        alt="<u>Plantation</u> <br> I drove past this plantation yesterday, everything is so green!"></a>
 
-  <li><img src="photos/thumbnails/08.jpg"
-        alt="Picture of Dunes My summer vacation to the Oregon Coast. I love the sandy dunes!"></li>
+  <a  href="photos/08.jpg"><img src="photos/thumbnails/08.jpg"
+        alt="<u>Dunes</u>  <br> My summer vacation to the Oregon Coast. I love the sandy dunes!"></a>
 
-  <li><img src="photos/thumbnails/09.jpg"
-        alt="Picture of a Countryside Lane We enjoyed a quiet stroll down this countryside lane. "></li>
+  <a href="photos/09.jpg"><img src="photos/thumbnails/09.jpg"
+        alt="<u>Countryside Lane</u>  <br> We enjoyed a quiet stroll down this countryside lane. "></a>
 
-  <li><img src="photos/thumbnails/10.jpg"
-        alt="Picture of a Sunset Sunset at the coast! The sky turned a lovely shade of orange."></li>
+  <a  href="photos/10.jpg"><img src="photos/thumbnails/10.jpg"
+        alt="<u>Sunset</u>  <br> Sunset at the coast! The sky turned a lovely shade of orange."></a>
 
-  <li><img src="photos/thumbnails/11.jpg"
-        alt="Picture of a Cave I did a tour of a cave today and the view of the landscape below was breathtaking."></li>
+  <a  href="photos/11.jpg"><img src="photos/thumbnails/11.jpg"
+        alt="<u>Cave</u>  <br> I did a tour of a cave today and the view of the landscape below was breathtaking."></a>
 
-  <li><img src="photos/thumbnails/12.jpg"
-        alt="Picture of Bluebells I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."></li>
+  <a  href="photos/12.jpg"><img src="photos/thumbnails/12.jpg"
+        alt="<u>Bluebells</u>  <br> I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."></a>
 
-</ul>
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-<script src="magnific-popup/jquery.magnific-popup.js"></script>
+
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="lightGallery-master/dist/js/lightgallery.min.js"></script>
 <script src="js/main.js"></script>
-<script></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery();
+    });
+</script>
 </body>
 <footer id="footer">
 <h3>&copy; 2017 Soumya Gupta</h3>

@@ -3,7 +3,7 @@ $('img').on('click', function(){
 });
 
 (function() {
-  var $imgs = $('#gallery li img');
+  var $imgs = $('.gallery img');
   var $search = $('#search');
   var cache =[];
   $imgs.each(function(){
@@ -29,8 +29,3 @@ if ('oninput in $search[0]'){
   $search.on('keyup', filter);
 }
 }());
-
-
-$(document).ready(function() {
-  $('.image-link').magnificPopup({type:'image'});
-});
