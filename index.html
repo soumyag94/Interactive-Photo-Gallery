@@ -15,7 +15,7 @@
 </form>
 </header>
 
-<div class="gallery" id="lightgallery">
+<div class="gallery Site-content" id="lightgallery">
   <a href="photos/01.jpg"><img src="photos/thumbnails/01.jpg"
         alt="<u>Hay Bales</u> <br> I love hay bales. Took this snap on a drive through the countryside past some straw fields."></a>
 
@@ -58,7 +58,9 @@
 <script src="js/main.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        $("#lightgallery").lightGallery();
+        $("#lightgallery").lightGallery({
+          download: false
+        });
     });
 </script>
 </body>
